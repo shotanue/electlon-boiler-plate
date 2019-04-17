@@ -1,0 +1,21 @@
+{
+  "name": "app_name",
+  "version": "1.0.0",
+  "description": "electron app boiler plate, with parcel",
+  "main": "main.js",
+  "scripts": {
+    "watch": "parcel watch ./src/index.html --public-url ./ --no-hmr --target=electron",
+    "start": "electron .",
+    "build": "electron-packager . app_name --platform=darwin --arch=x64 --electron-version=4.1.4"
+  },
+  "dependencies": {
+    "electron-reload": "^1.4.0",
+    "electron-store": "^3.2.0",
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "electron": "^4.1.4",
+    "electron-packager": "^13.1.1",
+    "parcel": "^1.12.3"
+  }
+}
